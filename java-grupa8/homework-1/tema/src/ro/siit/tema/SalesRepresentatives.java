@@ -6,27 +6,25 @@ package ro.siit.tema;
  */
 public class SalesRepresentatives {
     public int sales;
-    public int quota;
+    public int revenue;
     public String name;
 
     public int getSales() {
         return sales;
-    }
+    }    // getter method for sales
 
     public void setSales(int m) {
         sales = m;
-    }
+    }  //setter method for sales
 
-    public int getQuota() {
-        return quota;
-    }
+    public int getRevenue() {
+        return revenue;
+    }  //getter method for revenue
 
-    public void setQuota(int n) {
-        quota = n;
-    }
+    public void setRevenue(int n) { revenue = n; } //setter method for revenue
 
-    public String getName() {return name;}
+    public String getName() { return name; }  //getter method for name
 
-    public void setName(String s) {name = s;}
+    public void setName(String s) { name = s; } //setter method for name
 
 }
