@@ -25,5 +25,11 @@ public class BubbleSort {
         }
         while (swap > 0);
 
+        for (int i = 0; i < SalesGuy.length; i++) {    //printing on the screen the results of the bubble sort
+            System.out.print("Name = " + SalesGuy[i].getName());
+            System.out.print(" Sales = " + SalesGuy[i].getSales());
+            System.out.println(" Revenue = " + SalesGuy[i].getRevenue());
+        }
+
     }
 }
