@@ -73,11 +73,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Volkswagen.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Volkswagen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dealership/src/main/java/ro/scii/java8/Volkswagen.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dealership.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Dealership/src/main/java/ro/scii/java8/Dealership.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -111,6 +121,7 @@
         <option value="$PROJECT_DIR$/Dealership/src/main/java/ro/scii/java8/GreenBonusProgram.java" />
         <option value="$PROJECT_DIR$/Dealership/src/main/java/ro/scii/java8/Hyundai.java" />
         <option value="$PROJECT_DIR$/Dealership/src/main/java/ro/scii/java8/Volkswagen.java" />
+        <option value="$PROJECT_DIR$/Dealership/src/main/java/ro/scii/java8/Dealership.java" />
       </list>
     </option>
   </component>
@@ -289,6 +300,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3c51b46a-0650-4bcc-b276-f9339e5f22fe" name="Default" comment="" />
@@ -430,6 +444,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dealership/src/main/java/ro/scii/java8/Dealership.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
           <folding />
         </state>
       </provider>
