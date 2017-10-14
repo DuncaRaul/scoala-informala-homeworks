@@ -1,9 +1,13 @@
 package ro.scii.java8;
 
-public class BMW extends ElectricVehicle{
+/**
+ * @author x-RauL-x
+ * This class represents the Bmw model
+ */
+public class Bmw extends ElectricVehicle {
 
 
-    public BMW(String manufacturer, String vehicleModel, float motorPower, float batteryCapacity, int range, boolean hasFastCharging) {
+    public Bmw(String manufacturer, String vehicleModel, float motorPower, float batteryCapacity, int range, boolean hasFastCharging) {
         super(manufacturer, vehicleModel, motorPower, batteryCapacity, range, hasFastCharging);
     }
 }
