@@ -8,13 +8,13 @@ public class ElectricVehicle {
 
     private String manufacturer;
     private String vehicleModel;
-    private float motorPower;
+    private double motorPower;
     private float batteryCapacity;
     private int range;
     private boolean hasFastCharging;
 
 
-    public ElectricVehicle(String manufacturer, String vehicleModel, float motorPower, float batteryCapacity, int range, boolean hasFastCharging) {
+    public ElectricVehicle(String manufacturer, String vehicleModel, double motorPower, float batteryCapacity, int range, boolean hasFastCharging) {
         this.manufacturer = manufacturer;
         this.vehicleModel = vehicleModel;
         this.motorPower = motorPower;
@@ -24,10 +24,16 @@ public class ElectricVehicle {
 
     }
 
-    public String toString() {
-        return "Manufacturer = " + manufacturer + " Model = " + vehicleModel + " motorPower = " + motorPower;
-    }
 
+    @Override
+    public String toString() {
+        return "manufacturer='" + manufacturer + '\'' +
+                ", vehicleModel='" + vehicleModel + '\'' +
+                ", motorPower=" + motorPower +
+                ", batteryCapacity=" + batteryCapacity +
+                ", range=" + range +
+                ", hasFastCharging=" + hasFastCharging;
+    }
 
     public String getManufacturer() {
         return manufacturer;
@@ -45,11 +51,11 @@ public class ElectricVehicle {
         this.vehicleModel = vehicleModel;
     }
 
-    public float getMotorPower() {
+    public double getMotorPower() {
         return motorPower;
     }
 
-    public void setMotorPower(float motorPower) {
+    public void setMotorPower(double motorPower) {
         this.motorPower = motorPower;
     }
 
@@ -77,4 +83,5 @@ public class ElectricVehicle {
     public void setHasFastCharging(boolean hasFastCharging) {
         this.hasFastCharging = hasFastCharging;
     }
+
 }
