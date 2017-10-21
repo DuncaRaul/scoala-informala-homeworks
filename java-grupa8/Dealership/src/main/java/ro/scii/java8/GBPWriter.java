@@ -20,9 +20,7 @@ public class GBPWriter extends Writer {
         String serializedFunds = String.valueOf(p);
         try {
             writer.write(serializedFunds);
-        }
-
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

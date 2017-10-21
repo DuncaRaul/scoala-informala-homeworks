@@ -18,7 +18,7 @@ public class EVWriter extends Writer {
 
     public void writeVehicles(ElectricVehicle v) {
         String serializedVehicle = v.getManufacturer() + "," + v.getVehicleModel() + "," + v.getMotorPower() + "," +
-                v.getBatteryCapacity() + "," + v.getRange() + "," + v.isHasFastCharging() +  "," + v.isNew() +  "," + v.getPrice() + "," + v.getStockNr();
+                v.getBatteryCapacity() + "," + v.getRange() + "," + v.isHasFastCharging() + "," + v.isNew() + "," + v.getPrice() + "," + v.getStockNr();
         try {
             writer.write(serializedVehicle);
             writer.newLine();

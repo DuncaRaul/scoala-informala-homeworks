@@ -1,13 +1,32 @@
 package ro.scii.java8;
 
+import java.io.IOException;
+
+/**
+ * @author x-RauL-x
+ * This class represents the dealership model
+ */
 public class Dealership {
 
-    private String name;
+    GreenBonusProgram g = new GreenBonusProgram();
 
-    private float price;
-    private int stockNr;
+    private String dealershipName = "Get Electric";
 
-    private Customer[] customers;
-    private ElectricVehicle[] vehicles;
+    public String getDealershipName() {
+        return dealershipName;
+    }
 
+    public boolean checkIfCarIsInStock(ElectricVehicle v) {
+        return v.getStockNr() > 0 ? true : false;
+    }
+
+    public boolean checkIfDealershipCanGrantFunds(ElectricVehicle electricVehicle) throws IOException, ClassNotFoundException {
+        if (electricVehicle.isNew()) {
+            g.checkFunds();
+            return true;
+        } else {
+            System.out.println("The Green Bonus Program cannot grant you funds since the vehicle is not new.");
+            return false;
+        }
+    }
 }
