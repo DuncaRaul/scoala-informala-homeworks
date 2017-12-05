@@ -5,6 +5,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * @author x-RauL-x
@@ -15,13 +17,20 @@ public class Main {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-        Customer customer = new Customer("Dorel", 40000);
+        WorkerThread w0 = new WorkerThread();
+        WorkerThread w1 = new WorkerThread();
+        WorkerThread w2 = new WorkerThread();
 
-        EVReader eVReader = new EVReader(new BufferedReader(new FileReader("ElectricVehicles.csv")));
-        List<ElectricVehicle> vehicleView = eVReader.readVehicles();
-        eVReader.close();
+        CustomerID c = new CustomerID();
+        CustomerID c1 = new CustomerID();
+        CustomerID c2 = new CustomerID();
 
-        customer.viewAllVehiclesList(vehicleView);
+        ExecutorService executorService = Executors.newFixedThreadPool(3);
+
+        executorService.execute(w0);
+        executorService.execute(w1);
+        executorService.execute(w2);
+        executorService.shutdown();
 
     }
 }
